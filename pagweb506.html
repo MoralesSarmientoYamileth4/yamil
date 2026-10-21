@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web HTML y MySQL</title>
+<style>
+        body {
+            background-color: #f9e7c7; 
+            color: #684f48;            
+            font-family: Arial, sans-serif; 
+        }
+    </style>
+</head>
+</body>
+<img src= "C:\Users\ALUMNOS\Desktop\v"width="1200" height="200" style="display: block; margin: 0 auto;">
+<header>
+<marquee direction= "left" speed= "1000" behavior= "scroll">
+<h1 style="text-align: center;"> GUIA DE LIBRETA BÁSICOS HTML y MySQL</h1>
+</marquee>
+<p style="text-align: center;">Sintaxis Básicas</p>
+ </header>
+<main style="width: 100%;">
+        
+        <h2 style="color: #684f48; border-bottom: 2px solid #d6e9ed; padding-bottom: 8px;"> Fundamentos de HTML</h2>
+        <p>HTML (HyperText Markup Language) es el componente estructor básico de cualquier página web. Funciona mediante un sistema de etiquetas.</p>
+
+        <!-- Tipos de Sintaxis -->
+        <h3 style="color: #684f48;">1. Tipos de Sintaxis </h3>
+        <ul>
+            <li><strong>Etiquetas con Cierre:</strong> Requieren una apertura y un cierre obligatorio. <br></li>
+            <li><strong>Etiquetas Autoconclusivas:</strong> No envuelven texto, se cierran a sí mismas. <br></li>
+            <li><strong>Atributos:</strong> Modificadores que van dentro de la etiqueta de apertura. <br></li>
+        </ul>
+<img src= "C:\Users\ALUMNOS\Desktop\sql"width="400" height="500" style= "display: block; margin: 0 auto;">
+<table border="1" style="width: 80%; margin: 20px auto; border-collapse: collapse; font-family: Arial, sans-serif;">
+  <thead>
+    <tr style="background-color: #6B4F4B; color: white;">
+      <th style="padding: 10px;">Elemento</th>
+      <th style="padding: 10px;">¿Cómo se crea/inserta?</th>
+      <th style="padding: 10px;">Ejemplo de Código</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">Tablas</td>
+      <td style="padding: 10px;">
+        Se crean con la etiqueta <code>&lt;table&gt;</code>. Usa <code>&lt;tr&gt;</code> para las filas, 
+        <code>&lt;th&gt;</code> para los encabezados y <code>&lt;td&gt;</code> para las celdas de datos.
+      </td>
+      <td style="padding: 10px; background-color: #f9f9f9;">
+        <pre style="margin: 0;">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Título&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Dato&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</pre>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; font-weight: bold; text-align: center;">Imágenes</td>
+      <td style="padding: 10px;">
+        Se insertan con la etiqueta autoconclusiva <code>&lt;img&gt;</code>. 
+        Requiere el atributo <code>src</code> (ruta de la imagen) y se recomienda usar <code>alt</code> (texto alternativo).
+      </td>
+      <td style="padding: 10px; background-color: #f9f9f9;">
+        <pre style="margin: 0;">&lt;img src="ruta/imagen.jpg" alt="Descripción" width="200"&gt;</pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="margin-top: 50px; padding-top: 40px; text-align: center;">
+    <h1 style="font-size: 42px; color: #6B4F4B; font-family: Arial, sans-serif; letter-spacing: 2px; margin-bottom: 10px;">
+        FUNDAMENTOS DE MySQL
+    </h1>
+    <p style="font-family: Arial, sans-serif; font-size: 18px; color: #333; max-width: 600px; margin: 0 auto 30px auto;">
+        CREAR BD Y TABLAS </p>
+</div>
+<img src= "C:\Users\ALUMNOS\Desktop\M1"width="1000" height="500" style="display: block; margin: 0 auto;">
+<!-- Información sobre cómo crear una Base de Datos -->
+<div style="font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333;">
+    
+    <h2 style="color: #6B4F4B; border-bottom: 2px solid #6B4F4B; padding-bottom: 5px; margin-top: 30px;">
+        ¿Cómo crear una Base de Datos en MySQL?
+    </h2>
+    
+    <p style="line-height: 1.6; font-size: 16px;">
+        Para comenzar a trabajar en MySQL, el primer paso es crear el contenedor donde se almacenarán todas nuestras tablas e información. Esto se logra mediante sentencias de código SQL estructuradas.
+    </p>
+
+    <h3 style="color: #6B4F4B; font-size: 18px; margin-top: 20px;">Pasos Básicos:</h3>
+    <ul style="line-height: 1.6; font-size: 16px; padding-left: 20px;">
+        <li><strong>Creación:</strong> Se utiliza el comando <code>CREATE DATABASE</code> seguido del nombre que deseas asignarle.</li>
+        <li><strong>Selección:</strong> Antes de crear tablas, debes indicarle al sistema qué base de datos vas a usar con el comando <code>USE</code>.</li>
+    </ul>
+
+    <h3 style="color: #6B4F4B; font-size: 18px; margin-top: 20px;">Ejemplo de Código SQL:</h3>
+    <div style="background-color: #f4f4f4; border-left: 5px solid #6B4F4B; padding: 15px; font-family: monospace; font-size: 15px; border-radius: 4px; overflow-x: auto;">
+        <span style="color: #008000; font-weight: bold;">-- 1. Crear la base de datos llamada 'mi_tienda'</span><br>
+        <span style="color: #0000FF; font-weight: bold;">CREATE DATABASE</span> mi_tienda;<br><br>
+        <span style="color: #008000; font-weight: bold;">-- 2. Seleccionar la base de datos para empezar a usarla</span><br>
+        <span style="color: #0000FF; font-weight: bold;">USE</span> mi_tienda;
+    </div>
+
+</div>
+
+<a href="https://code.visualstudio.com/Docs/languages/html" style="color: #000000"> Visita 67 </a>
+    </main>
+</body>
+</html>
